@@ -2,7 +2,8 @@
 
 import { FC, PropsWithChildren } from "react";
 import dynamic from "next/dynamic";
-import { ThemeProvider as MuiThemeProvider, createTheme } from "@mui/material/styles";
+import createTheme from "@mui/material/styles/createTheme";
+import MuiThemeProvider from "@mui/material/styles/ThemeProvider";
 import typography from "./typography";
 
 const CssBaseline = dynamic(() => import("@mui/material/CssBaseline"));
